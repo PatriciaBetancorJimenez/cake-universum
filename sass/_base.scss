@@ -1,0 +1,43 @@
+// CUSTOM COLOR VARIABLES
+$primary: #c6cfff;
+$secondary: #e8d3ff;
+$info: #deecff;
+$text: #212529;
+$text-hover: rgba(0, 0, 0, 0.5);
+$box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.7);
+$selection: #ffc0cb;
+
+// MEDIA QUERIES
+$bp-tiny: 24em; // 400px
+$bp-smallest: 36em; // 575.98px
+$bp-small: 48em; // 767.98px
+$bp-medium: 62em; //991.98px
+$bp-large: 75em; //1199.98px
+
+//CSS RESET
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  // scroll-behavior: smooth;
+
+  @media (max-width: $bp-small) {
+    font-size: 87.75%; //14px
+  }
+  @media (max-width: $bp-smallest) {
+    font-size: 75%; //12px
+  }
+}
+
+body {
+  font-family: "Comfortaa", sans-serif;
+
+  ::selection {
+    background-color: $selection;
+  }
+}

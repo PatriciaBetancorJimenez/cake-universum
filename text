@@ -1,0 +1,19 @@
+1 check node is installed on computer. node -v. If not, download it from internet.
+2 npm init :to create new project (on project folder)
+3 Install sass compiler with command: npm install node-sass --save -dev (-dev means we use to develop project)
+4 install live server with command: sudo npm install live-server -g (-g means installed in computer globally)
+ 
+5 write scripts on package.json. 
+
+"compile:sass": "node-sass sass/main.scss css/css.css -w" --> command: package name ,input file, output file -auto compil
+"devserver": "live-server",---> package name, command
+"start": "npm-run-all --parallel devserver compile:sass" ---> compile sass and start live server at the same time
+
+6.now do both live-server + compile sass automatical: npm install npm-run-all --save -dev
+7. press --->npm run start to run both at the same time
+remember to add css style sheet on html document!
+
+8. Bootstap css compile:
+-intall:  npm install bootstrap --save
+-add: @import "../node_modules/bootstrap/scss/bootstrap";  to main.scss. Bootstap colours can be chagend on this file
+there is no need to add css style sheet on html document. Bootstap js files are necessary, though

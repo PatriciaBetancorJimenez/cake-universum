@@ -1,0 +1,448 @@
+///NAVBAR
+#navbar {
+  z-index: 4;
+}
+
+.nav {
+  z-index: 5;
+  &__icon {
+    height: 3rem;
+    padding-right: 0.5rem;
+  }
+
+  &-item {
+    font-weight: 700;
+    padding: 0 0.5rem;
+  }
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: $text;
+  &:hover {
+    color: $text-hover;
+  }
+}
+
+.dropdown-menu {
+  background-color: $primary;
+  border: none;
+}
+.dropdown-item {
+  color: $text;
+  &:hover {
+    background-color: $primary;
+    color: $text-hover;
+  }
+}
+
+//button
+.navbar-toggler {
+  background-color: $secondary;
+  border-radius: 25px;
+  padding: 0.5rem;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.navbar-toggler-icon {
+  width: 2rem;
+  height: 2rem;
+}
+
+//scroll fading effect
+.navbar.scrolled {
+  background-color: $primary;
+  opacity: 0.9;
+}
+
+// HEADER
+
+#header {
+  height: 100vh;
+  position: relative;
+  padding-top: 5rem;
+  background-image: url(../img/cupcake-main.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0% 50%;
+}
+
+.header {
+  &__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.5);
+    display: flex;
+    align-items: center;
+  }
+
+  &__form {
+    background-color: $secondary;
+
+    padding: 3rem 2rem;
+    border-radius: 10px;
+    box-shadow: $box-shadow;
+  }
+
+  &__text {
+    @media (max-width: $bp-smallest) {
+      font-size: 4.5rem; //12px
+    }
+    @media (max-width: $bp-tiny) {
+      font-size: 3.5rem; //12px
+    }
+  }
+
+  &__animation {
+    @media (max-width: $bp-tiny) {
+      font-size: 1.5rem;
+    }
+  }
+}
+
+//FEEDBACK{
+.feedback {
+  &__img {
+    border: 5px solid $secondary;
+  }
+
+  &__prev {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23ffc0cb' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+  }
+
+  &__next {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23ffc0cb' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+  }
+}
+//SERVICES
+
+.services {
+  &__card:hover > div {
+    transition: 0.5s all;
+
+    transform: rotate(9deg);
+  }
+  &__box {
+    height: 10rem;
+    width: 10rem;
+    margin: auto;
+  }
+  &__box::before {
+    content: "";
+    height: 100%;
+    width: 100%;
+    display: inline-block;
+    background-color: #93a4ff;
+    -webkit-mask-size: cover;
+    mask-size: cover;
+  }
+  &__box--1::before {
+    -webkit-mask-image: url(../img/birthday-cake-icon.svg);
+    mask-image: url(../img/birthday-cake-icon.svg);
+  }
+  &__box--2::before {
+    -webkit-mask-image: url(../img/wedding-rings-icon.svg);
+    mask-image: url(../img/wedding-rings-icon.svg);
+  }
+  &__box--3::before {
+    -webkit-mask-image: url(../img/bread.svg);
+    mask-image: url(../img/bread.svg);
+  }
+  &__box--4::before {
+    -webkit-mask-image: url(../img/cup-cake-icon.svg);
+    mask-image: url(../img/cup-cake-icon.svg);
+  }
+
+  &__border {
+    border-bottom: 3px solid $primary;
+  }
+}
+
+//VIDEO
+#video {
+  height: 90vh;
+  position: relative;
+  overflow: hidden;
+}
+svg {
+  font-family: "Work Sans", sans-serif;
+  font-size: 10rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  height: 100%;
+
+  @media (max-width: $bp-small) {
+    //767.98px
+    font-size: 8rem;
+  }
+  @media (max-width: $bp-smallest) {
+    //575.98px
+    font-size: 6rem;
+  }
+}
+
+video {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+rect {
+  fill: white;
+  mask: url(#mask);
+}
+
+svg > rect {
+  fill: $primary;
+}
+
+//INFORMATION
+
+.information {
+  &__icon {
+    font-size: 1.5rem;
+    margin: 1.25rem auto;
+  }
+}
+
+//MISSION
+
+#mission {
+  height: 60vh;
+  background-image: url(../img/mission.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+.mission {
+  &__overlay {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__text {
+    text-align: center;
+    background-color: rgba($primary, 0.8);
+    padding: 2rem 3rem;
+  }
+}
+
+// TEAM
+.team {
+  &__card {
+    box-shadow: $box-shadow;
+    border: 5px solid $primary;
+    background-color: $info;
+    transition: 0.3s;
+
+    margin: 0 auto;
+    border-radius: 25px;
+
+    &:hover {
+      box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.5);
+      transform: translateY(-0.5rem);
+    }
+    &:hover {
+      background-color: #fff;
+    }
+  }
+  &__img {
+    width: 65%;
+    margin-top: -4rem;
+    margin-bottom: 2rem;
+    border: 5px solid $primary;
+    box-shadow: $box-shadow;
+  }
+  &__icons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+    width: 70%;
+    padding-top: 1.5rem;
+
+    border-top: 5px solid $primary;
+  }
+
+  &__link {
+    color: $text;
+
+    &:hover {
+      color: $text-hover;
+    }
+  }
+  &__icons {
+    font-size: 1.25rem;
+  }
+}
+
+//GALLERY
+
+.gallery {
+  position: relative;
+  padding: 0;
+  overflow: hidden;
+
+  &__paragraph {
+    text-transform: uppercase;
+    position: absolute;
+    top: 1.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+
+    @media (max-width: $bp-small) {
+      //767.98px
+      display: none;
+    }
+  }
+
+  &:hover .gallery__overlay {
+    transition: 0.8s all;
+    transform: translateY(0%);
+    @media (max-width: $bp-small) {
+      //767.98px
+      display: none;
+    }
+  }
+
+  &__overlay {
+    transform: translateY(100%);
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: $primary;
+    opacity: 0.7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__btn {
+    text-transform: uppercase;
+
+    padding: 0.5rem 1rem;
+    border: white 3px solid;
+    background-color: rgba($primary, 1);
+    &:focus {
+      outline: none;
+    }
+    &:hover {
+      background-color: white;
+      color: $primary;
+    }
+  }
+  //  popup overlay
+
+  &__modal {
+    position: fixed;
+    background: rgba($secondary, 0.7);
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: none;
+    z-index: 20;
+  }
+
+  &__modal.open {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    @media (max-width: $bp-small) {
+      //767.98px
+      display: none;
+    }
+  }
+
+  &__modal--inner {
+    background: $white;
+
+    padding: 20px;
+    position: relative;
+    opacity: 1;
+  }
+}
+
+// CONTACT
+
+.contact {
+  &__card {
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  &__map {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+
+    border: 5px $info solid !important;
+    border-radius: 20px;
+  }
+
+  &__form {
+    width: 80%;
+  }
+}
+
+// FOOTER
+
+#footer {
+  background-color: $primary;
+  font-size: 0.9rem;
+}
+
+.footer {
+  &__col {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  &__link {
+    color: $text;
+
+    &:hover {
+      color: $text-hover;
+      text-decoration: none;
+    }
+  }
+  &__img {
+    width: 4em;
+    display: block;
+    margin: auto;
+    transition: 0.3s all;
+    &:hover {
+      // transform: translateY(-5%);
+      opacity: 0.5;
+    }
+  }
+
+  &__icons {
+    display: flex;
+    justify-content: space-evenly;
+    align-self: stretch;
+  }
+}

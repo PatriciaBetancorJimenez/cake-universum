@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="icon" href="img/cup-cake.png" type="image/x-icon" />
+      <script src="https://kit.fontawesome.com/161339b2f2.js" crossorigin="anonymous"></script>
+      <link rel="preconnect" href="https://fonts.gstatic.com">
+      <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&display=swap" rel="stylesheet">
+      <link rel="preconnect" href="https://fonts.gstatic.com">
+      <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@900&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="css/style.css">
+      <title>Cake Universum</title>
+   </head>
+   <body>
+      <!-- NAVBAR -->
+      <nav id="navbar" class="navbar navbar-expand-md  navbar-light fixed-top bg-primary py-2">
+         <div class="container ">
+            <a class="navbar-brand d-flex align-items-center" href="#header">
+               <img src="img/cup-cake.png" alt="cake icon" class="nav__icon">
+               <h4 class="d-none d-md-block mb-0"> Cake Universum</h4>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+               aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse pt-md-0 pt-3" id="navbarCollapse">
+               <ul class="navbar-nav ml-auto ">
+                  <li class="nav-item dropdown ">
+                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                     Home
+                     </a>
+                     <div class="dropdown-menu " aria-labelledby="navbarDropdown">
+                        <a data-scroll class="dropdown-item" href="#services">Services</a>
+                        <a data-scroll class="dropdown-item" href="#video">Statement</a>
+                        <a data-scroll class="dropdown-item" href="#partners">Business partners</a>
+                     </div>
+                  </li>
+                  <li class="nav-item">
+                     <a data-scroll class="nav-link" href="#team">Team</a>
+                  </li>
+                  <li class="nav-item">
+                     <a data-scroll class="nav-link" href="#gallery">Gallery</a>
+                  </li>
+                  <li class="nav-item">
+                     <a data-scroll class="nav-link " href="#contact">Contact</a>
+                  </li>
+               </ul>
+            </div>
+         </div>
+      </nav>
+      <!-- HEADER -->
+      <header id="header" >
+         <div class="header__overlay ">
+            <div class="container">
+               <div class="row mt-5">
+                  <div class="col-lg-8">
+                     <h1 class="display-3 mb-5 header__text">Welcome to </br>  Cake </br>  Universum</h1>
+                     <h2 class="mb-5 header__animation">A <span class="txt-rotate" data-period="2000"
+                        data-rotate='[ "galaxy", "world", "website", "place", "home" ]'></span> full of cakes!
+                     </h2>
+                     <a href="#video" class="btn btn-primary btn-lg">Show more</a>
+                  </div>
+                  <div class="col-lg-4 d-none d-lg-block  ">
+                     <div class="header__form ">
+                        <h5 class="mb-5 text-center">Subscribe </h5>
+                        <form class="needs-validation" novalidate>
+                           <div class="form-group">
+                              <label for="fullName">Full name</label>
+                              <input type="text" class="form-control" id="fullName"
+                                 placeholder="Enter Full Name" required>
+                              <div class="invalid-feedback">
+                                 Enter full name
+                              </div>
+                           </div>
+                           <div class="form-group">
+                              <label for="email">Email address</label>
+                              <input type="email" class="form-control" id="email"
+                                 placeholder="Enter email" required>
+                              <div class="invalid-feedback">
+                                 Enter e-mail address
+                              </div>
+                           </div>
+                           <button type="submit" class="btn btn-info d-block mx-auto mt-4 ">Submit</button>
+                        </form>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </header>
+      <!-- SUBSCRIBE// only visible in medium and smaller screen -->
+      <section id="subscribe" class="d-lg-none bg-secondary">
+         <div class="container">
+            <div class="row justify-content-center py-5 ">
+               <div class="col-10 ">
+                  <h4 class="text-center mb-4">Subscribe</h4>
+                  <form class="form-inline justify-content-around needs-validation" novalidate>
+                     <div class="row">
+                        <div class="col-md-6">
+                           <label class="sr-only" for="name">Full Name</label>
+                           <div class="input-group mb-4 mb-lg-0">
+                              <div class="input-group-prepend ">
+                                 <div class="input-group-text bg-info "><i class="fas fa-user"></i></div>
+                              </div>
+                              <input type="text" class="form-control" id="name" placeholder="Full Name" required>
+                              <div class="invalid-feedback">
+                                 Enter full name
+                              </div>
+                           </div>
+                        </div>
+                        <div class="col-md-6">
+                           <label class="sr-only" for="email">E-mail</label>
+                           <div class="input-group mb-4 mb-lg-0 ">
+                              <div class="input-group-prepend">
+                                 <div class="input-group-text bg-info"><i class="fas fa-envelope"></i></div>
+                              </div>
+                              <input type="email" class="form-control" id="email" placeholder="E-mail" required>
+                              <div class="invalid-feedback">
+                                 Enter e-mail address
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <button type="submit" class="btn btn-info">Submit</button>
+                  </form>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- FEEDBACK -->
+      <section id="feedback" class="bg-info">
+         <div id="carouselControls" class="carousel slide" data-ride="carousel" data-interval="3000">
+         <div class="container">
+            <div class="carousel-inner p-5 text-center">
+               <div class="carousel-item active">
+                  <div class="row">
+                     <div class="col-md-3 col-lg-2  d-flex align-items-center">
+                        <img src="img/feedback-1.jpg" alt="" class="feedback__img  img-fluid rounded-circle d-none d-md-block">
+                     </div>
+                     <div class="col-md-9 col-lg-10 d-flex align-items-center">
+                        <blockquote class="blockquote">
+                           <p class="mb-3">"Best professionals, attention to detail, support during the whole purchase phase. Always happy to answer any question"</p>
+                           <footer class="blockquote-footer">Sophie <cite title="Source Title">The Cake Company</cite></footer>
+                        </blockquote>
+                     </div>
+                  </div>
+               </div>
+               <div class="carousel-item">
+                  <div class="row">
+                     <div class="col-md-3 col-lg-2  d-flex align-items-center">
+                        <img src="img/feedback-2.jpg" alt="" class="feedback__img img-fluid rounded-circle d-none d-md-block">
+                     </div>
+                     <div class="col-md-9 col-lg-10 d-flex align-items-center">
+                        <blockquote class="blockquote">
+                           <p class="mb-3">"Friendly staff, warm welcome to their office, quality products, detailed invoices. The best of Cake Universum: affordable prices"</p>
+                           <footer class="blockquote-footer">Steven <cite title="Source Title">The Coffee Company</cite></footer>
+                        </blockquote>
+                     </div>
+                  </div>
+               </div>
+               <div class="carousel-item">
+                  <div class="row">
+                     <div class="col-md-3 col-lg-2  d-flex align-items-center">
+                        <img src="img/feedback-3.jpg" alt="" class="feedback__img img-fluid rounded-circle d-none d-md-block">
+                     </div>
+                     <div class="col-md-9 col-lg-10 d-flex align-items-center">
+                        <blockquote class="blockquote">
+                           <p class="mb-3">"Cake Universum is the best company to work with in big events like weddings and birthdays. Always commited to deliver the best designs in tight deadlines "</p>
+                           <footer class="blockquote-footer">Arabella <cite title="Source Title">The Flower Company</cite></footer>
+                        </blockquote>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselControls" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon feedback__prev"  aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next " href="#carouselControls" role="button" data-slide="next">
+            <span class="carousel-control-next-icon feedback__next " aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+            </a>
+         </div>
+      </section>
+      <!-- //SERVICES -->
+      <section id="services"  >
+         <div class="container my-5 py-5 text-center ">
+            <div class="title" >
+               <h3 class="display-4">Services</h3>
+               <p>Discover what we have to offer</p>
+            </div>
+            <div class="row ">
+               <div class=" col-sm-6 col-md-3 mb-5 mb-md-0">
+                  <div class="services__card">
+                     <div class="services__box services__box--1"></div>
+                     <h3 class="py-3  services__border">Birthdays</h3>
+                     <p>Celebrating your birthday soon? See our best cakes!
+                     </p>
+                     <a href="#gallery" class="btn btn-primary ">See more</a>
+                  </div>
+               </div>
+               <div class="col-sm-6  col-md-3 mb-5 mb-md-0">
+                  <div class="services__card">
+                     <div class="services__box services__box--2"></div>
+                     <h3 class="py-3 services__border">Weddings</h3>
+                     <p>Surprise your wedding guests with our desings
+                     </p>
+                     <a href="#gallery" class="btn btn-primary ">See more</a>
+                  </div>
+               </div>
+               <div class="col-sm-6  col-md-3 mb-5 mb-sm-0">
+                  <div class="services__card">
+                     <div class="services__box services__box--3"></div>
+                     <h3 class="py-3 services__border">Breads</h3>
+                     <p>We offer the best bread selection.
+                     </p>
+                     <a href="#gallery" class="btn btn-primary ">See more</a>
+                  </div>
+               </div>
+               <div class="col-sm-6 col-md-3 ">
+                  <div class="services__card">
+                     <div class="services__box services__box--4"></div>
+                     <h3 class="py-3 services__border">Cupcakes</h3>
+                     <p>Original and personalized cupcakes for the loved ones.
+                     </p>
+                     <a href="#gallery" class="btn btn-primary ">See more</a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <section id="statement">
+         <!-- video -->
+         <div id="video">
+            <div class="container-fluid">
+               <video autoplay playsinline muted loop preload>
+                  <source src="img/video.mp4">
+               </video>
+               <svg height="100%" width="100%">
+                  <defs>
+                     <mask id="mask" height="100%" width="100%" x="0" y="0">
+                        <rect height="100%" width="100%" x="0" y="0"/>
+                        <text  x="50%" y="35%" fill="red" text-anchor="middle" > Taste</text>
+                        <text  x="50%" y="60%" fill="red" text-anchor="middle" > Quality</text>
+                        <text  x="50%" y="85%" fill="red" text-anchor="middle" > Design</text>
+                     </mask>
+                  </defs>
+                  <rect height="100%" width="100%" x="0" y="0"/>
+               </svg>
+            </div>
+         </div>
+         <!-- information -->
+         <div id="#information">
+            <div class="container-fluid ">
+               <div class="row bg-secondary">
+                  <div class="col-md-6 p-0">
+                     <img src="https://cdn.pixabay.com/photo/2015/12/03/00/52/birthday-1073573_960_720.jpg" class="img-fluid" alt="">
+                  </div>
+                  <div class="col-md-6 d-flex align-items-center justify-content-center ">
+                     <div class="col-10 text-center py-5 ">
+                        <h4 class="mb-0">Philosophy</h4>
+                        <i class="fas fa-landmark  information__icon"></i>
+                        <p >Our target is to please our customers prividing them with excellent services. Any design, flavour, colour they ask for, they get.</p>
+                     </div>
+                  </div>
+               </div>
+               <div class="row bg-secondary ">
+                  <div class="col-md-6 d-flex align-items-center justify-content-center order-md-0 order-2 ">
+                     <div class="col-10 text-center py-5  ">
+                        <h4 class="mb-0">Quality</h4>
+                        <i class="fas fa-leaf  information__icon"></i>
+                        <p >We're not only committed to deliver the best visual experience. We also work with quality ingredients.</p>
+                     </div>
+                  </div>
+                  <div class="col-md-6 p-0">
+                     <img src="https://cdn.pixabay.com/photo/2016/11/15/02/08/cupcakes-1825136_960_720.jpg" class="img-fluid" alt="">
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- BUSINESS PARTNERS -->
+      <section id="partners">
+         <div class="container my-5 py-5 text-center ">
+            <div class="title">
+               <h3 class="display-4">Bussiness Partners</h3>
+               <p>See our best clients</p>
+            </div>
+            <div class="row ">
+               <div class="col-md-2 col-4  py-3" >
+                  <img src="img/partner-1.png" alt=""  class="img-fluid d-block ">
+               </div>
+               <div class="col-md-2 col-4 py-3">
+                  <img src="img/partner-2.png" alt="" class="img-fluid d-block">
+               </div>
+               <div class="col-md-2 col-4 py-3">
+                  <img src="img/partner-3.png" alt="" class="img-fluid d-block">
+               </div>
+               <div class="col-md-2 col-4 py-3">
+                  <img src="img/partner-4.png" alt="" class="img-fluid d-block">
+               </div>
+               <div class="col-md-2 col-4  py-3">
+                  <img src="img/partner-5.png" alt="" class="img-fluid d-block">
+               </div>
+               <div class="col-md-2 col-4 py-3">
+                  <img src="img/partner-6.png" alt="" class="img-fluid d-block">
+               </div>
+            </div>
+            <div class="row ">
+               <div class="col-md-2 col-4 py-3" >
+                  <img src="img/partner-7.png" alt=""  class="img-fluid d-block ">
+               </div>
+               <div class="col-md-2 col-4 py-3">
+                  <img src="img/partner-8.png" alt="" class="img-fluid d-block">
+               </div>
+               <div class="col-md-2 col-4 py-3">
+                  <img src="img/partner-9.png" alt="" class="img-fluid d-block">
+               </div>
+               <div class="col-md-2 col-4 py-3">
+                  <img src="img/partner-10.png" alt="" class="img-fluid d-block">
+               </div>
+               <div class="col-md-2 col-4  py-3">
+                  <img src="img/partner-11.png" alt="" class="img-fluid d-block">
+               </div>
+               <div class="col-md-2 col-4  py-3">
+                  <img src="img/partner-12.png" alt="" class="img-fluid d-block">
+               </div>
+            </div>
+            <div class="row ">
+               <div class="col-md-2 col-4 py-3" >
+                  <img src="img/partner-13.png" alt=""  class="img-fluid d-block ">
+               </div>
+               <div class="col-md-2 col-4 py-3">
+                  <img src="img/partner-14.png" alt="" class="img-fluid d-block">
+               </div>
+               <div class="col-md-2 col-4 py-3">
+                  <img src="img/partner-15.png" alt="" class="img-fluid d-block">
+               </div>
+               <div class="col-md-2 col-4 py-3">
+                  <img src="img/partner-16.png" alt="" class="img-fluid d-block">
+               </div>
+               <div class="col-md-2 col-4  py-3">
+                  <img src="img/partner-17.png" alt="" class="img-fluid d-block">
+               </div>
+               <div class="col-md-2 col-4 py-3">
+                  <img src="img/partner-18.png" alt="" class="img-fluid d-block">
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- MISSION-->
+      <section id="mission" >
+         <div class="mission__overlay">
+            <div class="mission__text">
+               <h3 class="mb-0 font-italic">"Our mission is to indulge you"</h3>
+            </div>
+         </div>
+      </section>
+      <!-- TEAM -->
+      <section id="team">
+         <div class="container-fluid my-5 py-5 text-center ">
+            <div class="title">
+               <h3 class="display-4">Team</h3>
+               <p class="mb-5">Discover the best of our company: the people behind it</p>
+            </div>
+            <div class="row justify-content-center">
+               <div class="col-sm-8 col-md-6 col-lg-3 mb-5 mb-lg-0">
+                  <div class="card  team__card mb-5 mb-lg-0">
+                     <div class="card-body d-flex flex-column align-items-center" >
+                        <img src="img/team-1.jpg" alt="" class="img-fluid rounded-circle team__img ">
+                        <h4 class="card-title mb-3">Dany Winters</h4>
+                        <h5 class="text-muted">Lead Cook</h5>
+                        <p class="card-text">She is the heart of the business with 10 years of experience in the company. </p>
+                        <div class="team__icons">
+                           <a href="https://twitter.com" class="team__link" ><i class="fab fa-twitter team__icon"></i></a>
+                           <a href="https://facebook.com" class="team__link" ><i class="fab fa-facebook team__icon""></i></a>
+                           <a href="https://linkedin.com" class="team__link" ><i class="fab fa-linkedin  team__icon""></i></a>
+                           <a href="https://instagram.com" class="team__link" ><i class="fab fa-instagram  team__icon""></i></a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-sm-8 col-md-6 col-lg-3 mb-5 mb-lg-0 ">
+                  <div class="card  team__card mb-5 mb-lg-0">
+                     <div div class="card-body d-flex flex-column align-items-center">
+                        <img src="img/team-2.jpg" alt="" class="img-fluid rounded-circle team__img ">
+                        <h4 class="card-title mb-3">Alan Spencer</h4>
+                        <h5 class="text-muted">Director</h5>
+                        <p class="card-text">The company was grounded by him and his family. He is the real boss!</p>
+                        <div class="team__icons">
+                           <a href="https://twitter.com" class="team__link" ><i class="fab fa-twitter team__icon"></i></a>
+                           <a href="https://facebook.com" class="team__link" ><i class="fab fa-facebook team__icon""></i></a>
+                           <a href="https://linkedin.com" class="team__link" ><i class="fab fa-linkedin  team__icon""></i></a>
+                           <a href="https://instagram.com" class="team__link" ><i class="fab fa-instagram  team__icon""></i></a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-sm-8 col-md-6 col-lg-3 mb-5 mb-md-0 ">
+                  <div class="card  team__card mb-5 mb-md-0">
+                     <div class="card-body d-flex flex-column align-items-center" >
+                        <img src="img/team-3.jpg" alt="" class="img-fluid rounded-circle team__img ">
+                        <h4 class="card-title mb-3">Laura Dern</h4>
+                        <h5 class="text-muted">Lead Marketing</h5>
+                        <p class="card-text">Laura is in charge of expanding the company by attracting new potential clients.</p>
+                        <div class="team__icons">
+                           <a href="https://twitter.com" class="team__link" ><i class="fab fa-twitter team__icon"></i></a>
+                           <a href="https://facebook.com" class="team__link" ><i class="fab fa-facebook team__icon""></i></a>
+                           <a href="https://linkedin.com" class="team__link" ><i class="fab fa-linkedin  team__icon""></i></a>
+                           <a href="https://instagram.com" class="team__link" ><i class="fab fa-instagram  team__icon""></i></a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-sm-8 col-md-6 col-lg-3 ">
+                  <div class="card  team__card ">
+                     <div class="card-body d-flex flex-column align-items-center" >
+                        <img src="img/team-4.jpg" alt="" class="img-fluid rounded-circle team__img ">
+                        <h4 class="card-title mb-3">Nick Wilson</h4>
+                        <h5 class="text-muted">HR</h5>
+                        <p class="card-text">The fist face any newbie sees in our company. Nick is the leader of our HR team.</p>
+                        <div class="team__icons">
+                           <a href="https://twitter.com" class="team__link" ><i class="fab fa-twitter team__icon"></i></a>
+                           <a href="https://facebook.com" class="team__link" ><i class="fab fa-facebook team__icon""></i></a>
+                           <a href="https://linkedin.com" class="team__link" ><i class="fab fa-linkedin  team__icon""></i></a>
+                           <a href="https://instagram.com" class="team__link" ><i class="fab fa-instagram  team__icon""></i></a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- GALLERY -->
+      <section id="gallery">
+         <div class="container-fluid  my-5 py-5  text-center ">
+            <div class="title">
+               <h3 class="display-4">Gallery</h3>
+               <p class="mb-5">See our work</p>
+            </div>
+            <div class="row">
+               <div  class="gallery col-sm-6 col-md-3">
+                  <p class="gallery__paragraph">pure taste</p>
+                  <img class=" img-fluid
+                     "  src="https://images.unsplash.com/photo-1566864399117-22c449669089?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80"/>
+                  <div class="gallery__overlay">
+                     <button class="gallery__btn">Zoom</button>
+                  </div>
+               </div>
+               <div  class="gallery col-sm-6 col-md-3">
+                  <p class="gallery__paragraph">pure joy</p>
+                  <img class=" img-fluid
+                     "  src="https://images.unsplash.com/photo-1547562475-d5c9cead07f0?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80"/>
+                  <div class="gallery__overlay">
+                     <button class="gallery__btn">Zoom</button>
+                  </div>
+               </div>
+               <div  class="gallery col-sm-6 col-md-3">
+                  <p class="gallery__paragraph">pure design</p>
+                  <img class=" img-fluid
+                     "   src="https://images.unsplash.com/photo-1576024350255-7858eb26b18b?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=40" />
+                  <div class="gallery__overlay">
+                     <button class="gallery__btn">Zoom</button>
+                  </div>
+               </div>
+               <div  class="gallery  col-sm-6 col-md-3">
+                  <p class="gallery__paragraph">pure happiness</p>
+                  <img class=" img-fluid
+                     " src="https://images.unsplash.com/photo-1569929232526-d9c6578e1531?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=40" />
+                  <div class="gallery__overlay">
+                     <button class="gallery__btn">Zoom</button>
+                  </div>
+               </div>
+            </div>
+            <div class="row">
+               <div  class="gallery col-sm-6 col-md-3">
+                  <p class="gallery__paragraph">pure design</p>
+                  <img class=" img-fluid
+                     "  src="https://images.unsplash.com/photo-1585419960497-ec7d3d934460?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" />
+                  <div class="gallery__overlay">
+                     <button class="gallery__btn">Zoom</button>
+                  </div>
+               </div>
+               <div  class="gallery col-sm-6 col-md-3">
+                  <p class="gallery__paragraph">pure happiness</p>
+                  <img class=" img-fluid
+                     "  src="https://images.unsplash.com/photo-1557020333-3a6ac2a018ba?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" />
+                  <div class="gallery__overlay">
+                     <button class="gallery__btn">Zoom</button>
+                  </div>
+               </div>
+               <div  class="gallery col-sm-6 col-md-3">
+                  <p class="gallery__paragraph">pure joy</p>
+                  <img class=" img-fluid
+                     "   src="https://images.unsplash.com/photo-1602533438437-ce0c0b47faaa?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" />
+                  <div class="gallery__overlay">
+                     <button class="gallery__btn">Zoom</button>
+                  </div>
+               </div>
+               <div  class="gallery col-sm-6 col-md-3">
+                  <p class="gallery__paragraph">pure taste</p>
+                  <img class=" img-fluid
+                     " src="https://images.unsplash.com/photo-1587333981056-844f89654004?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" />
+                  <div class="gallery__overlay">
+                     <button class="gallery__btn">Zoom</button>
+                  </div>
+               </div>
+            </div>
+            <div class="row">
+               <div  class="gallery col-sm-6 col-md-3">
+                  <p class="gallery__paragraph">pure happiness</p>
+                  <img class=" img-fluid
+                     "  src="https://images.unsplash.com/photo-1591519060886-27dd11ad7f5a?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" />
+                  <div class="gallery__overlay">
+                     <button class="gallery__btn">Zoom</button>
+                  </div>
+               </div>
+               <div  class="gallery col-sm-6 col-md-3">
+                  <p class="gallery__paragraph">pure design</p>
+                  <img class="  img-fluid
+                     "  src="https://images.unsplash.com/photo-1569010015992-4a21f02d9e56?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" />
+                  <div class="gallery__overlay">
+                     <button class="gallery__btn">Zoom</button>
+                  </div>
+               </div>
+               <div  class="gallery col-sm-6 col-md-3">
+                  <p class="gallery__paragraph">pure taste</p>
+                  <img class=" img-fluid
+                     "   src="https://images.unsplash.com/photo-1610839872613-e37ccc6f4117?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" />
+                  <div class="gallery__overlay">
+                     <button class="gallery__btn">Zoom</button>
+                  </div>
+               </div>
+               <div  class="gallery col-sm-6 col-md-3">
+                  <p class="gallery__paragraph">pure joy</p>
+                  <img class=" img-fluid
+                     " src="https://images.unsplash.com/photo-1559143113-6332004db0e2?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" />
+                  <div class="gallery__overlay">
+                     <button class="gallery__btn">Zoom</button>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- MODAL// no visible in sm screen -->
+      <div class="gallery__modal">
+         <div class="gallery__modal--inner">
+            <img >
+         </div>
+      </div>
+      <!-- CONTACT -->
+      <section id="contact">
+         <div class="container mt-5 pt-5  ">
+            <div class="title text-center">
+               <h3 class="display-4">Contact</h3>
+               <p class="mb-5">Do you have any doubt? We'll be delighted to help</p>
+            </div>
+            <div class="row justify-content-center text-center mb-5 pb-5">
+               <div class="col col-md-8">
+                  <h4 class="mb-4 pb-4 ">FAQ</h4>
+                  <div id="accordion">
+                     <div class="card contact__card">
+                        <div class="card-header bg-primary">
+                           <h5 class="mb-0">
+                              <div href="#collapse1" data-toggle="collapse" data-parent="#accordion">
+                                 <i class="fas fa-arrow-circle-down mr-2"></i>What's the average price?
+                              </div>
+                           </h5>
+                        </div>
+                        <div id="collapse1" class="collapse show">
+                           <div class="card-body">
+                              Our prices are tailored and depend on the service you require.
+                           </div>
+                        </div>
+                     </div>
+                     <div class="card contact__card">
+                        <div class="card-header bg-secondary">
+                           <h5 class="mb-0">
+                              <div href="#collapse2" data-toggle="collapse" data-parent="#accordion">
+                                 <i class="fas fa-arrow-circle-down mr-2"></i>Do you offer catering services?
+                              </div>
+                           </h5>
+                        </div>
+                        <div id="collapse2" class="collapse">
+                           <div class="card-body">
+                              We do. Our speciallity are weddings and birthdays parties.
+                           </div>
+                        </div>
+                     </div>
+                     <div class="card contact__card">
+                        <div class="card-header bg-info">
+                           <h5 class="mb-0">
+                              <div href="#collapse3" data-toggle="collapse" data-parent="#accordion">
+                                 <i class="fas fa-arrow-circle-down mr-2"></i>Can I choose my own cake design?
+                              </div>
+                           </h5>
+                        </div>
+                        <div id="collapse3" class="collapse">
+                           <div class="card-body">
+                              Yes. Contact us and we can discuss your ideas.
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="container-fluid bg-secondary">
+            <div class="row py-5 justify-content-center ">
+               <div class="col-md-5 col-sm-8 text-center">
+                  <h4 class="mb-4 pb-4 ">Map</h4>
+                  <div >
+                     <iframe class="contact__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2461.5073154717415!2d-2.085290784330076!3d51.90645468926813!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48711b9b60f6de53%3A0xf5303006f0a24acd!2s23%20Swindon%20St%2C%20Cheltenham%20GL51%209EU!5e0!3m2!1sen!2suk!4v1615133157023!5m2!1sen!2suk" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                     
+                  </div>
+                  <div class="my-5">
+                     <p>Cake Universum SA</p>
+                     <p>23 Swindon street</p>
+                     <p>GL50 5SR</p>
+                     <p>Cheltenham, UK</p>
+                  </div>
+               </div>
+               <div class="col-md-5 col-sm-8 ">
+                  <div class="d-flex align-items-center flex-column ">
+                     <h4 class="mb-5 text-center">Message us </h4>
+                     <form class="contact__form needs-validation" novalidate>
+                        <div class="form-group">
+                           <label for="name">Name</label>
+                           <input type="text" class="form-control" id="name"
+                              placeholder="Enter name" required>
+                           <div class="invalid-feedback">
+                              Enter name
+                           </div>
+                        </div>
+                        <div class="form-group">
+                           <label for="surname">Surname</label>
+                           <input type="text" class="form-control" id="surname"
+                              placeholder="Enter surname" required>
+                           <div class="invalid-feedback">
+                              Enter surname
+                           </div>
+                        </div>
+                        <div class="form-group">
+                           <label for="email">Email address</label>
+                           <input type="email" class="form-control" id="email"
+                              placeholder="Enter email" required>
+                           <div class="invalid-feedback">
+                              Enter e-mail address
+                           </div>
+                        </div>
+                        <div class="form-group">
+                           <label for="message">Message</label>
+                           <textarea name="message" id="message" cols="10" rows="5" placeholder="Write a messeage" class="form-control" required></textarea>
+                           <div class="invalid-feedback">
+                              Enter text
+                           </div>
+                        </div>
+                        <button type="submit" class="btn btn-info  w-100 mt-4 ">Submit</button>
+                     </form>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- FOOTER -->
+      <footer id="footer" >
+         <div class="container py-5 ">
+            <div class="row">
+               <div class="col-md-4 col-6 order-0 order-md-0 footer__col">
+                  <h5 class="mb-4">Navigation</h5>
+                  <p class="footer__item"><a class="footer__link" href="#header">Home</a></p>
+                  <p class="footer__item"><a class="footer__link" href="#gallery">Gallery</a></p>
+                  <p class="footer__item"><a class="footer__link" href="#team">Team</a></p>
+                  <p class="footer__item"><a class="footer__link" href="#contact">Contact</a></p>
+               </div>
+               <div class="col-md-4 col-12 order-1 order-md-0 mb-5 mb-md-0 footer__col">
+                  <a href="#header" class="footer__link">
+                     <img src="img/cup-cake.png" alt="cake icon" class="img-fluid footer__img" >
+                     <h4 class="text-center mt-4" > Cake Universum</h4>
+                  </a>
+                  <div class="footer__icons mt-3">
+                     <a href="https://twitter.com" class="footer__link" ><i class="fab fa-twitter "></i></a>
+                     <a href="https://facebook.com" class="footer__link" ><i class="fab fa-facebook "></i></a>
+                     <a href="https://linkedin.com" class="footer__link"><i class="fab fa-linkedin  "></i></a>
+                     <a href="https://instagram.com"  class="footer__link"><i class="fab fa-instagram  "></i></a>
+                  </div>
+               </div>
+               <div class="col-md-4 col-6 order-0 order-md-0 footer__col">
+                  <h5 class="mb-4">Address</h5>
+                  <p>Cake Universum SA</p>
+                  <p>23 Swindon street</p>
+                  <p>GL50 5SR</p>
+                  <p>Cheltenham, UK</p>
+               </div>
+            </div>
+            <div class="row ">
+               <div class="col text-center">
+                  <p>Cake Universum  2021 &copy;</p>
+                  <p>Patricia Betancor Jimenez &hearts;</p>
+               </div>
+            </div>
+         </div>
+      </footer>
+      <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+         crossorigin="anonymous"></script>
+      <script src="js/js.js"></script>
+   </body>
+</html>
