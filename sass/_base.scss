@@ -1,4 +1,4 @@
-// CUSTOM COLOR VARIABLES
+// COLOR VARIABLES
 $primary: #c6cfff;
 $secondary: #e8d3ff;
 $info: #deecff;
@@ -7,7 +7,7 @@ $text-hover: rgba(0, 0, 0, 0.5);
 $box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.7);
 $selection: #ffc0cb;
 
-// MEDIA QUERIES
+//BOOTSTRAP MEDIA QUERY
 $bp-tiny: 24em; // 400px
 $bp-smallest: 36em; // 575.98px
 $bp-small: 48em; // 767.98px
@@ -36,6 +36,8 @@ html {
 
 body {
   font-family: "Comfortaa", sans-serif;
+  max-width: 1920px;
+  margin: 0 auto;
 
   ::selection {
     background-color: $selection;

@@ -366,7 +366,10 @@ svg > rect {
   }
 
   &__modal.open {
-    display: grid;
+    display: flex;
+
+    // display: grid;
+
     align-items: center;
     justify-items: center;
     @media (max-width: $bp-small) {
@@ -377,6 +380,7 @@ svg > rect {
 
   &__modal--inner {
     background: $white;
+    margin: 0 auto;
 
     padding: 20px;
     position: relative;

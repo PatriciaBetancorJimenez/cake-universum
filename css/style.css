@@ -7172,7 +7172,9 @@ a.text-dark:hover, a.text-dark:focus {
     font-size: 75%; } }
 
 body {
-  font-family: "Comfortaa", sans-serif; }
+  font-family: "Comfortaa", sans-serif;
+  max-width: 1920px;
+  margin: 0 auto; }
   body ::selection {
     background-color: #ffc0cb; }
 
@@ -7455,7 +7457,7 @@ svg > rect {
     display: none;
     z-index: 20; }
   .gallery__modal.open {
-    display: grid;
+    display: flex;
     align-items: center;
     justify-items: center; }
     @media (max-width: 48em) {
@@ -7463,6 +7465,7 @@ svg > rect {
         display: none; } }
   .gallery__modal--inner {
     background: #fff;
+    margin: 0 auto;
     padding: 20px;
     position: relative;
     opacity: 1; }
